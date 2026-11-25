@@ -1,0 +1,46 @@
+name: Actualizar SPORT NEWS
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Recopilar noticias
+        run: python scripts/fetch_news.py
+
+      - name: Guardar noticias
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          git diff --cached --quiet || git commit -m "Actualizar SPORT NEWS"
+          git push
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir web
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publicar web
+        uses: actions/deploy-pages@v4
