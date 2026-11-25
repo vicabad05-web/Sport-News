@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10243d">
+<title>SPORT NEWS | El deporte en 5 minutos</title>
+<meta name="description" content="Actualidad deportiva para estudiantes de ESO. Noticias publicadas en las últimas 24 horas.">
+<style>
+:root{--navy:#10243d;--blue:#1769aa;--orange:#ffb547;--ink:#172235;--muted:#718096;--bg:#f2f5f9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+header{background:linear-gradient(120deg,#0b1c31,#173e64 65%,#1769aa);color:white;padding:22px 0 18px}
+.brand{font-family:Impact,'Arial Narrow',sans-serif;font-size:clamp(42px,7vw,58px);font-weight:900;letter-spacing:.02em;line-height:1}
+.brand span{color:var(--orange)}.tagline{font-size:11px;font-weight:800;letter-spacing:.18em;color:#c7d8e9;margin-top:5px}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.live{border:1px solid #ffffff55;background:#ffffff18;border-radius:999px;padding:9px 13px;font-size:11px;font-weight:800}
+nav{display:flex;gap:20px;overflow:auto;white-space:nowrap;margin-top:23px;font-size:12px;font-weight:800}
+nav a{padding:5px 0}nav a:hover{color:var(--orange)}
+main{padding:28px 0 55px}.meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.kicker{display:inline-flex;align-items:center;border-radius:99px;padding:6px 11px;background:#e1f4e9;color:#137344;font-size:11px;font-weight:900}
+h1{font-family:Impact,'Arial Narrow',sans-serif;text-transform:uppercase;font-size:36px;margin:9px 0 2px;letter-spacing:.02em}
+.small{font-size:12px;color:var(--muted)}.section{font-family:Impact,'Arial Narrow',sans-serif;text-transform:uppercase;font-size:29px;margin:0 0 14px}
+.card{background:white;border-radius:17px;overflow:hidden;box-shadow:0 8px 28px #10243d10}
+.feature{display:grid;grid-template-columns:1.05fr 1fr}.feature img{width:100%;height:100%;min-height:300px;object-fit:cover;background:#dce5ee}
+.feature .body{padding:25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:17px}
+.news img{width:100%;height:180px;object-fit:cover;background:#dce5ee}.body{padding:17px}
+.pill{display:inline-flex;border-radius:99px;padding:5px 9px;background:#e8f2fb;color:#155b91;font-size:10px;font-weight:900;text-transform:uppercase}
+.byline{font-size:11px;color:var(--muted);margin-left:5px}.title{font-size:19px;line-height:1.22;margin:10px 0;font-weight:850}
+.feature .title{font-size:clamp(23px,3vw,31px)}.summary{font-size:14px;line-height:1.65;color:#526174;margin:0 0 14px}
+.read{color:var(--blue);font-size:12px;font-weight:900}.empty{padding:36px;text-align:center}.empty .emoji{font-size:50px}
+.section-block{margin-top:34px}.footer{text-align:center;font-size:11px;color:#8290a2;line-height:1.7;margin-top:35px}
+.status{font-size:12px;color:#526174;font-weight:700}.error{background:#fff2ee;color:#9d351b;padding:12px;border-radius:10px;font-size:12px;margin-top:15px}
+@media(max-width:700px){.feature{grid-template-columns:1fr}.feature img{height:210px;min-height:0}.feature .body{padding:18px}h1{font-size:31px}.section{font-size:25px}.news img{height:155px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="topline">
+    <div><div class="brand">SPORT<span>NEWS</span></div><div class="tagline">EL DEPORTE EN 5 MINUTOS</div></div>
+    <div class="live"><span style="color:#75e0a3">●</span> EDICIÓN ACTUALIZADA</div>
+  </div>
+  <nav id="nav"><a href="#portada">PORTADA</a></nav>
+</div></header>
+<main class="wrap">
+  <div class="meta">
+    <div><div class="kicker">◷ SOLO ÚLTIMAS 24 HORAS</div><h1>La actualidad deportiva</h1><div class="small" id="updated">Cargando edición…</div></div>
+    <div class="status" id="count">Consultando noticias…</div>
+  </div>
+  <section id="portada"><h2 class="section">🔥 La noticia destacada</h2><div id="featured"></div></section>
+  <div id="categories"></div>
+  <div class="footer">SPORT NEWS · Recurso educativo para Educación Física<br>Los titulares, extractos, imágenes y artículos pertenecen a sus respectivos medios. Consulta siempre la fuente original.</div>
+</main>
+<script>
+const emoji={"Fútbol":"⚽","Baloncesto":"🏀","Tenis":"🎾","Motor":"🏎️","Atletismo":"🏃","Balonmano":"🤾","Ciclismo":"🚴","Otros deportes":"🏅"};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function ago(d){let m=Math.max(0,Math.floor((Date.now()-new Date(d).getTime())/60000));return m<60?`Hace ${m} min`:`Hace ${Math.floor(m/60)} h`;}
+function card(n,feature=false){let img=n.image?`<img src="${esc(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:`<div style="display:grid;place-items:center;height:${feature?300:180}px;background:#e7edf4;font-size:52px">🏆</div>`;
+return `<article class="card ${feature?'feature':'news'}">${img}<div class="body"><div><span class="pill">${emoji[n.category]||"🏅"} ${esc(n.category)}</span><span class="byline">${esc(ago(n.published_at))} · ${esc(n.source)}</span></div><h3 class="title">${esc(n.title)}</h3><p class="summary">${esc(n.summary)}</p><a class="read" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer">LEER EN ${esc(n.source).toUpperCase()} ↗</a></div></article>`}
+async function load(){
+ try{
+  const res=await fetch('./data/news.json?v='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error('No se encuentra el archivo de noticias.');
+  const data=await res.json();const cutoff=Date.now()-24*60*60*1000;
+  const news=(data.articles||[]).filter(n=>{const t=new Date(n.published_at).getTime();return Number.isFinite(t)&&t>=cutoff&&t<=Date.now()}).sort((a,b)=>new Date(b.published_at)-new Date(a.published_at));
+  document.getElementById('updated').textContent='Última actualización: '+new Date(data.generated_at).toLocaleString('es-ES',{dateStyle:'medium',timeStyle:'short',timeZone:'Europe/Madrid'})+' · Hora peninsular';
+  document.getElementById('count').textContent=news.length+' noticias verificadas';
+  if(!news.length){document.getElementById('featured').innerHTML='<div class="card empty"><div class="emoji">📰</div><h2 class="section">Hoy no hay noticias verificadas</h2><p class="summary">No se han encontrado noticias con fecha fiable dentro de las últimas 24 horas. No mostramos noticias antiguas para rellenar la portada.</p></div>';return;}
+  document.getElementById('featured').innerHTML=card(news[0],true);
+  const groups={};news.forEach(n=>(groups[n.category]??=[]).push(n));
+  const cats=Object.keys(groups);
+  document.getElementById('nav').innerHTML='<a href="#portada">PORTADA</a>'+cats.map(c=>`<a href="#${encodeURIComponent(c)}">${esc(c.toUpperCase())}</a>`).join('');
+  document.getElementById('categories').innerHTML=cats.map(c=>`<section class="section-block" id="${encodeURIComponent(c)}"><h2 class="section">${emoji[c]||"🏅"} ${esc(c)}</h2><div class="grid">${groups[c].map(n=>card(n)).join('')}</div></section>`).join('');
+  if(data.errors?.length){document.getElementById('categories').insertAdjacentHTML('beforeend',`<div class="error">Aviso técnico: ${data.errors.length} fuente(s) no han podido consultarse en esta actualización. El resto de noticias sí se ha procesado.</div>`);}
+ }catch(e){document.getElementById('featured').innerHTML='<div class="card empty"><div class="emoji">🛠️</div><h2 class="section">Estamos preparando la portada</h2><p class="summary">La primera recopilación todavía no se ha publicado. Vuelve a consultar después de ejecutar la actualización desde GitHub Actions.</p></div>';document.getElementById('count').textContent='Edición pendiente';}
+}
+load();
+</script>
+</body></html>
