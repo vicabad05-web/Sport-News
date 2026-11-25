@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T10:37:42.048323+00:00",
-  "generated_at_madrid": "2026-11-25T11:37:42.048323+01:00",
-  "window_start": "2026-11-24T10:37:42.048323+00:00",
-  "window_end": "2026-11-25T10:37:42.048323+00:00",
+  "generated_at": "2026-11-25T10:46:03.924212+00:00",
+  "generated_at_madrid": "2026-11-25T11:46:03.924212+01:00",
+  "window_start": "2026-11-24T10:46:03.924212+00:00",
+  "window_end": "2026-11-25T10:46:03.924212+00:00",
   "window_hours": 24,
   "source_count": 6,
-  "article_count": 197,
+  "article_count": 193,
   "errors": [
     {
       "source": "L'Équipe",
@@ -13,6 +13,17 @@
     }
   ],
   "articles": [
+    {
+      "id": "4a6990c7de7a6db7",
+      "title": "Wales and West Ham's Morgan suffers serious injury",
+      "summary": "Wales and West Ham winger Ffion Morgan faces a lengthy spell on the sidelines after suffering a serious knee injury.",
+      "source": "BBC Sport",
+      "country": "Reino Unido",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c920xdl6d6kpo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e1bf/live/a9284a50-e407-11f1-ab35-e1af93fa5cce.jpg",
+      "published_at": "2026-11-25T10:38:44+00:00",
+      "category": "Otros deportes"
+    },
     {
       "id": "a82aa12e05d75ddf",
       "title": "Comunicado del Bayern por Musiala",
@@ -726,17 +737,6 @@
       "url": "https://www.theguardian.com/sport/2026/nov/25/usman-khawaja-sandpapergate-peace-deal-text-cricket-australia-ceo",
       "image": "https://i.guim.co.uk/img/media/8c6a184f608093883a4d03a625c41b7673f0f058/123_0_1687_1350/master/1687.jpg?width=140&quality=85&auto=format&fit=max&s=235a073f019be10dc8743efd4ab323ed",
       "published_at": "2026-11-25T06:34:52+00:00",
-      "category": "Otros deportes"
-    },
-    {
-      "id": "5c9e33ac50a16d42",
-      "title": "Wales need strong finish to campaign - Morgan",
-      "summary": "Jac Morgan believes Wales have had a positive Nations Championshipb, but says they must finish strongly against Japan.",
-      "source": "BBC Sport",
-      "country": "Reino Unido",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cmwy0xdv27q8o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a83c/live/5f64c3b0-e846-11f1-aa88-031e8213533d.jpg",
-      "published_at": "2026-11-25T06:34:30+00:00",
       "category": "Otros deportes"
     },
     {
@@ -2134,50 +2134,6 @@
       "url": "https://www.marca.com/futbol/athletic/2026/11/24/athletic-pina-mesa-especial-campeon-mundo-hamburguesas.html",
       "image": "https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/11/24/6b0568941c37a.jpeg",
       "published_at": "2026-11-24T10:49:28+00:00",
-      "category": "Otros deportes"
-    },
-    {
-      "id": "37f6ba6da413d3fa",
-      "title": "Martina Klein presenta en Barcelona las claves para decorar tu casa esta Navidad",
-      "summary": "Después de tres ediciones celebradas en Madrid, La Casa de Navidad de El Mueble sale por primera vez de la capital para instalarse en Barcelona. Una experiencia pensada para acercar el mundo de la decoración al público y ofrecer inspiración de cara a las fiestas navideñas, con diferentes charlas y actividades protagonizadas por profesionales del sector.",
-      "source": "Mundo Deportivo",
-      "country": "España",
-      "url": "https://www.mundodeportivo.com/ocio/20261124/1004254845/martina-klein-presenta-barcelona-claves-decorar-casa-navidad.html",
-      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/24/6b05647be09ed.r_d.1415-936-0.jpeg",
-      "published_at": "2026-11-24T10:44:19+00:00",
-      "category": "Fútbol"
-    },
-    {
-      "id": "9dc41bcfbb2a608b",
-      "title": "\"Carlos Espí es el botón rojo de Mourinho y te puede cambiar la vida\"",
-      "summary": "Consulta la noticia original para conocer todos los detalles de esta información deportiva.",
-      "source": "Marca",
-      "country": "España",
-      "url": "https://www.marca.com/radio/2026/11/24/miguel-quintana-carlos-espi-boton-rojo-mourinho-te-cambiar-vida-video.html",
-      "image": "https://www.dailymotion.com/crawler/video/xbzg1nu",
-      "published_at": "2026-11-24T10:43:37+00:00",
-      "category": "Otros deportes"
-    },
-    {
-      "id": "8e338d4bfe968614",
-      "title": "Madring anuncia cambios en el trazado",
-      "summary": "Madring prepara modificaciones para mejorar el espectáculo en pista y anuncia nuevas medidas para los espectadores, además de poner a la venta las entradas más económicas.",
-      "source": "Marca",
-      "country": "España",
-      "url": "https://www.marca.com/motor/formula1/gp-espana/2026/11/24/madring-pone-venta-entradas-baratas-2027-anuncia-cambios-trazado.html",
-      "image": "https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/11/24/6b0565cea5804.jpeg",
-      "published_at": "2026-11-24T10:42:52+00:00",
-      "category": "Otros deportes"
-    },
-    {
-      "id": "25f165f989d47901",
-      "title": "Florentino y el Barça, cara a cara en los juzgados por el caso Negreira<br>",
-      "summary": "La entidad azulgrana busca en un acto de conciliación que el máximo mandatario madridista se retracte de sus declaraciones sobre los pagos a Negreira&nbsp;",
-      "source": "Marca",
-      "country": "España",
-      "url": "https://www.marca.com/futbol/barcelona/2026/11/24/florentino-barca-cara-cara-juzgados-acusaciones-caso-negreira.html",
-      "image": "https://www.dailymotion.com/crawler/video/xbymhs2",
-      "published_at": "2026-11-24T10:39:18+00:00",
       "category": "Otros deportes"
     }
   ]
