@@ -5,22 +5,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101827">
-
-<title>SPORT NEWS | Tu revista deportiva</title>
+<title>SPORT NEWS | La actualidad deportiva</title>
 
 <style>
 :root {
   --dark:#101827;
-  --dark2:#19263a;
+  --dark2:#1b2940;
   --lime:#c8f169;
   --orange:#ff704f;
-  --white:#ffffff;
-  --bg:#f4f5f2;
-  --muted:#718096;
+  --bg:#f3f5f1;
+  --white:#fff;
+  --muted:#758195;
   --line:#e5e9e2;
 }
 
 * {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
 
 body {
   margin:0;
@@ -29,10 +30,10 @@ body {
   font-family:Arial,Helvetica,sans-serif;
 }
 
-a {text-decoration:none;color:inherit}
+a {color:inherit;text-decoration:none}
 
 .wrap {
-  width:min(1180px,calc(100% - 36px));
+  width:min(1160px,calc(100% - 36px));
   margin:auto;
 }
 
@@ -41,20 +42,18 @@ a {text-decoration:none;color:inherit}
 header {
   background:var(--dark);
   color:white;
-  padding:25px 0 0;
-  overflow:hidden;
+  padding-top:28px;
 }
 
 .top {
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
   gap:20px;
-  flex-wrap:wrap;
 }
 
 .logo {
-  font-size:clamp(38px,7vw,65px);
+  font-size:clamp(40px,7vw,68px);
   font-weight:1000;
   letter-spacing:-4px;
   line-height:1;
@@ -63,11 +62,11 @@ header {
 .logo span {color:var(--lime)}
 
 .tagline {
-  color:#aab5c5;
+  color:#aab6c8;
   font-size:11px;
-  font-weight:800;
+  font-weight:900;
   letter-spacing:3px;
-  margin-top:9px;
+  margin-top:10px;
 }
 
 .edition {
@@ -83,18 +82,18 @@ nav {
   display:flex;
   gap:25px;
   overflow-x:auto;
-  padding:23px 0 17px;
   white-space:nowrap;
+  padding:25px 0 17px;
   font-size:11px;
   font-weight:900;
 }
 
-nav a {color:#d7dfeb}
+nav a {color:#dce3ed}
 nav a:hover {color:var(--lime)}
 
-/* PORTADA */
+/* INTRODUCCIÓN */
 
-main {padding:32px 0 65px}
+main {padding:32px 0 70px}
 
 .intro {
   display:flex;
@@ -102,23 +101,23 @@ main {padding:32px 0 65px}
   align-items:end;
   flex-wrap:wrap;
   gap:15px;
-  margin-bottom:28px;
+  margin-bottom:32px;
 }
 
 .label {
-  color:#526b29;
   background:#e7f4d0;
-  padding:7px 12px;
+  color:#466421;
   border-radius:30px;
+  padding:8px 12px;
   font-size:10px;
   font-weight:900;
 }
 
 h1 {
-  font-size:clamp(29px,5vw,44px);
-  font-weight:1000;
+  font-size:clamp(30px,5vw,45px);
   letter-spacing:-2px;
-  margin:15px 0 5px;
+  margin:17px 0 6px;
+  font-weight:1000;
 }
 
 .muted {
@@ -127,11 +126,11 @@ h1 {
 }
 
 .count {
-  font-size:13px;
-  font-weight:900;
   background:white;
-  padding:12px 16px;
+  padding:13px 17px;
   border-radius:12px;
+  font-size:12px;
+  font-weight:900;
 }
 
 /* SECCIONES */
@@ -140,34 +139,35 @@ h1 {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:10px;
-  margin:35px 0 17px;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:36px 0 18px;
 }
 
 .section-title h2 {
-  margin:0;
-  font-size:23px;
-  font-weight:1000;
+  font-size:24px;
   letter-spacing:-1px;
+  margin:0;
+  font-weight:1000;
 }
 
 .section-title span {
   color:var(--muted);
-  font-size:11px;
-  font-weight:700;
+  font-size:10px;
+  font-weight:900;
 }
 
-/* DESTACADA */
+/* NOTICIA PRINCIPAL */
 
 .feature {
   display:grid;
   grid-template-columns:1.1fr 1fr;
   background:var(--dark);
   color:white;
-  border-radius:20px;
+  border-radius:19px;
   overflow:hidden;
-  min-height:330px;
   margin-bottom:20px;
+  min-height:330px;
 }
 
 .feature img {
@@ -185,14 +185,13 @@ h1 {
 }
 
 .feature .title {
-  font-size:clamp(24px,3vw,35px);
-  line-height:1.12;
-  margin:16px 0;
-  font-weight:1000;
+  font-size:clamp(25px,3vw,36px);
+  line-height:1.13;
   letter-spacing:-1px;
+  margin:16px 0;
 }
 
-.feature .summary {color:#c5ced9}
+.feature .summary {color:#c6d0de}
 
 /* TARJETAS */
 
@@ -204,20 +203,20 @@ h1 {
 
 .card {
   background:white;
+  border:1px solid var(--line);
   border-radius:15px;
   overflow:hidden;
-  border:1px solid var(--line);
   transition:transform .2s,box-shadow .2s;
 }
 
 .card:hover {
   transform:translateY(-4px);
-  box-shadow:0 12px 25px #10182712;
+  box-shadow:0 10px 25px #10182712;
 }
 
 .card img {
   width:100%;
-  height:175px;
+  height:180px;
   object-fit:cover;
   background:#e5e9e2;
 }
@@ -226,8 +225,8 @@ h1 {
 
 .pill {
   display:inline-block;
-  background:#edf3e4;
-  color:#456122;
+  background:#edf4df;
+  color:#496324;
   border-radius:20px;
   padding:6px 9px;
   font-size:10px;
@@ -238,30 +237,31 @@ h1 {
   display:block;
   color:var(--muted);
   font-size:10px;
-  margin-top:10px;
+  margin-top:11px;
 }
 
 .title {
   font-size:18px;
-  line-height:1.25;
+  line-height:1.27;
   font-weight:900;
   margin:10px 0;
-  letter-spacing:-.3px;
 }
 
 .summary {
-  color:#647184;
+  color:#667386;
   font-size:13px;
   line-height:1.6;
 }
 
 .read {
   display:inline-block;
-  margin-top:8px;
-  color:#3f5e20;
+  color:#496324;
   font-size:11px;
   font-weight:1000;
+  margin-top:8px;
 }
+
+.read:hover {color:#789f35}
 
 /* CATEGORÍAS */
 
@@ -270,57 +270,60 @@ h1 {
   scroll-margin-top:15px;
 }
 
-.category .grid {margin-top:15px}
+.category .grid {margin-top:17px}
 
 .more {
-  margin-top:18px;
   background:white;
   border:1px solid var(--line);
   border-radius:12px;
-  padding:13px 17px;
+  padding:15px;
+  margin-top:17px;
 }
 
 .more summary {
   cursor:pointer;
+  color:#496324;
   font-size:12px;
   font-weight:900;
-  color:#3f5e20;
 }
 
 .more .grid {margin-top:18px}
 
-/* VACÍO Y PIE */
+/* MENSAJES */
 
 .empty {
   background:white;
   padding:45px 20px;
-  text-align:center;
   border-radius:18px;
+  text-align:center;
 }
 
-.empty h2 {font-size:24px}
+.empty h2 {font-size:23px}
 
 footer {
   background:var(--dark);
-  color:#b6c1cf;
-  padding:30px 0;
+  color:#aab6c8;
+  text-align:center;
+  padding:32px 15px;
   font-size:11px;
   line-height:1.8;
-  text-align:center;
 }
 
-@media(max-width:850px) {
+footer strong {color:var(--lime)}
+
+@media(max-width:800px) {
   .grid {grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 @media(max-width:600px) {
   .wrap {width:calc(100% - 24px)}
   .feature {grid-template-columns:1fr}
-  .feature img {height:210px;min-height:210px}
-  .feature-body {padding:21px}
+  .feature img {height:220px;min-height:220px}
+  .feature-body {padding:22px}
   .grid {grid-template-columns:1fr}
   .card img {height:205px}
   nav {gap:19px}
+  .edition {font-size:9px}
 }
 </style>
 </head>
@@ -332,7 +335,7 @@ footer {
   <div class="top">
    <div>
     <div class="logo">SPORT<span>NEWS</span></div>
-    <div class="tagline">TU REVISTA DEPORTIVA · 5 MINUTOS</div>
+    <div class="tagline">LA ACTUALIDAD DEPORTIVA EN 5 MINUTOS</div>
    </div>
    <div class="edition">● EDICIÓN DEL DÍA</div>
   </div>
@@ -348,18 +351,21 @@ footer {
   <div>
    <span class="label">◷ SOLO NOTICIAS DE LAS ÚLTIMAS 24 HORAS</span>
    <h1>El mundo del deporte</h1>
-   <div class="muted" id="updated">Preparando la edición...</div>
+   <div class="muted" id="updated">Cargando edición...</div>
   </div>
   <div class="count" id="count">Cargando noticias</div>
  </div>
 
  <section id="portada">
+
   <div class="section-title">
    <h2>🔥 Lo más destacado</h2>
-   <span>SELECCIÓN AUTOMÁTICA · 15 NOTICIAS</span>
+   <span>15 NOTICIAS SELECCIONADAS</span>
   </div>
+
   <div id="featured"></div>
   <div class="grid" id="top-news"></div>
+
  </section>
 
  <div id="categories"></div>
@@ -367,71 +373,59 @@ footer {
 </main>
 
 <footer>
- <div class="wrap">
-  <strong>SPORT NEWS</strong> · Tu revista deportiva<br>
-  Proyecto educativo para Educación Física · ESO<br>
-  Los contenidos y fotografías pertenecen a sus respectivos medios.
-  Consulta siempre la publicación original.
- </div>
+ <strong>SPORT NEWS</strong><br>
+ Revista digital deportiva · Recurso educativo para Educación Física<br>
+ Las noticias pertenecen a sus respectivos medios de comunicación.
+ Consulta siempre la publicación original.
 </footer>
 
 <script>
 
-const EMOJI = {
+const ICONS = {
  "Fútbol":"⚽",
  "Baloncesto":"🏀",
  "Tenis":"🎾",
  "Motor":"🏎️",
  "Atletismo":"🏃",
- "Balonmano":"🤾",
  "Ciclismo":"🚴",
+ "Balonmano":"🤾",
  "Otros deportes":"🏅"
 };
 
-const CATEGORY_ORDER = [
- "Fútbol","Baloncesto","Tenis","Motor",
- "Atletismo","Balonmano","Ciclismo",
+const ORDER = [
+ "Fútbol",
+ "Baloncesto",
+ "Tenis",
+ "Motor",
+ "Atletismo",
+ "Balonmano",
+ "Ciclismo",
  "Otros deportes"
-];
-
-const SPORTS = [
- "futbol","fútbol","football","soccer","laliga",
- "champions","premier league","real madrid",
- "barcelona","atletico","atlético","liga",
- "basketball","baloncesto","nba","euroliga","acb",
- "tenis","tennis","atp","wta","wimbledon",
- "formula 1","fórmula 1","f1","motogp","moto gp",
- "rally","atletismo","athletics","maraton",
- "maratón","running","handball","balonmano",
- "cycling","ciclismo","tour de france","giro d'italia",
- "rugby","golf","natacion","natación","swimming",
- "voleibol","volleyball","cricket","boxeo","boxing",
- "surf","esqui","esquí","olimpic","olímpic"
-];
-
-const NOISE = [
- "black friday","ofertas de móviles",
- "televisores","recetas","coches de ocasión",
- "horóscopo"
 ];
 
 const escapeHTML = value =>
  String(value ?? "").replace(/[&<>"']/g,c=>({
-  "&":"&amp;","<":"&lt;",">":"&gt;",
-  '"':"&quot;","'":"&#39;"
+  "&":"&amp;",
+  "<":"&lt;",
+  ">":"&gt;",
+  '"':"&quot;",
+  "'":"&#39;"
  }[c]));
 
 function safeURL(value) {
  try {
   const u = new URL(value);
   return ["https:","http:"].includes(u.protocol)
-   ? escapeHTML(u.href) : "#";
+   ? escapeHTML(u.href)
+   : "#";
  } catch {
   return "#";
  }
 }
 
-function categoryOf(n) {
+/* CLASIFICACIÓN DEPORTIVA */
+
+function getCategory(n) {
 
  const text = (
   (n.title || "")+" "+
@@ -441,8 +435,9 @@ function categoryOf(n) {
 
  const rules = [
   ["Fútbol",[
-   "futbol","fútbol","football","soccer",
-   "laliga","champions","premier league",
+   "fútbol","futbol","football","soccer",
+   "laliga","la-liga","champions",
+   "premier-league","west-ham",
    "real-madrid","barcelona","atletico"
   ]],
   ["Baloncesto",[
@@ -458,7 +453,7 @@ function categoryOf(n) {
    "motogp","moto-gp","rally"
   ]],
   ["Atletismo",[
-   "atletismo","athletics","maraton",
+   "atletismo","athletics","marathon",
    "maratón","running"
   ]],
   ["Balonmano",[
@@ -470,191 +465,250 @@ function categoryOf(n) {
   ]]
  ];
 
- for (const [name,words] of rules) {
-  if (words.some(w=>text.includes(w))) return name;
+ for(const [category,terms] of rules) {
+  if(terms.some(term=>text.includes(term))) {
+   return category;
+  }
  }
 
- return n.category || "Otros deportes";
+ const existing = n.category || "Otros deportes";
+
+ return ORDER.includes(existing)
+  ? existing
+  : "Otros deportes";
 }
 
-function relevant(n) {
-
- const text = (
-  (n.title || "")+" "+
-  (n.summary || "")+" "+
-  (n.url || "")
- ).toLowerCase();
-
- if (NOISE.some(w=>text.includes(w))) return false;
-
- return SPORTS.some(w=>text.includes(w)) ||
-  /\/sport\/|\/sports\/|\/futbol\/|\/football\/|\/motor\//i.test(n.url || "");
-}
+/* VALORACIÓN DE NOTICIAS */
 
 function importance(n) {
 
  const text = (
-  (n.title || "")+" "+(n.summary || "")
+  (n.title || "")+" "+
+  (n.summary || "")
  ).toLowerCase();
-
- let score = 0;
 
  const source = (n.source || "").toLowerCase();
 
- if (source.includes("bbc")) score += 5;
- if (source.includes("marca")) score += 5;
- if (source.includes("guardian")) score += 4;
- if (source.includes("sky")) score += 4;
- if (source.includes("mundo deportivo")) score += 4;
+ let score = 0;
 
- const major = [
+ const importantWords = [
   "final","campeón","campeona","récord",
   "lesión","fichaje","victoria","derrota",
-  "clasificación","mundial","europeo",
-  "champions","selección","olímpico"
+  "mundial","europeo","champions",
+  "selección","olímpico","clasificación",
+  "retirada","histórico"
  ];
 
- major.forEach(w=>{
-  if(text.includes(w)) score += 2;
+ importantWords.forEach(word=>{
+  if(text.includes(word)) score += 2;
  });
 
+ if(source.includes("bbc")) score += 4;
+ if(source.includes("marca")) score += 4;
+ if(source.includes("as")) score += 3;
+ if(source.includes("reuters")) score += 4;
+ if(source.includes("guardian")) score += 3;
+ if(source.includes("mundo deportivo")) score += 3;
+ if(source.includes("espn")) score += 3;
+
+ if(getCategory(n)!=="Otros deportes") score += 2;
+
  const age = Math.max(
-  0,(Date.now()-new Date(n.published_at).getTime())/3600000
+  0,
+  (Date.now()-new Date(n.published_at).getTime())/3600000
  );
 
  score += Math.max(0,24-age)*0.3;
 
- if (categoryOf(n)!=="Otros deportes") score += 2;
-
  return score;
 }
 
-function timeAgo(date) {
+/* FECHA */
+
+function timeAgo(value) {
 
  const minutes = Math.max(
-  0,Math.floor((Date.now()-new Date(date))/60000)
+  0,
+  Math.floor((Date.now()-new Date(value).getTime())/60000)
  );
 
  if(minutes<60) return `Hace ${minutes} min`;
 
- const hours=Math.floor(minutes/60);
+ const hours = Math.floor(minutes/60);
 
- return `Hace ${hours} h`;
+ if(hours<24) return `Hace ${hours} h`;
+
+ return "Hace más de 24 h";
 }
 
-function imageHTML(n,feature=false) {
+function formatDate(value) {
+ return new Date(value).toLocaleString("es-ES",{
+  dateStyle:"medium",
+  timeStyle:"short",
+  timeZone:"Europe/Madrid"
+ });
+}
 
- if(!n.image) return "";
+/* IMÁGENES */
 
- return `<img
+function imageHTML(n) {
+
+ if(!n.image) {
+  return "";
+ }
+
+ return `
+ <img
   src="${safeURL(n.image)}"
-  alt=""
+  alt="${escapeHTML(n.title)}"
   loading="lazy"
   onerror="this.style.display='none'"
  >`;
 }
 
-function card(n,feature=false) {
+/* TARJETAS */
 
- const category=categoryOf(n);
+function card(n,featured=false) {
+
+ const category = getCategory(n);
 
  return `
- <article class="${feature?'feature':'card'}">
-  ${imageHTML(n,feature)}
-  <div class="${feature?'feature-body':'card-body'}">
+ <article class="${featured?'feature':'card'}">
+
+  ${imageHTML(n)}
+
+  <div class="${featured?'feature-body':'card-body'}">
+
    <span class="pill">
-    ${EMOJI[category] || "🏅"} ${escapeHTML(category)}
+    ${ICONS[category]} ${escapeHTML(category)}
    </span>
+
    <span class="byline">
     ${escapeHTML(timeAgo(n.published_at))}
     · ${escapeHTML(n.source)}
    </span>
-   <h3 class="title">${escapeHTML(n.title)}</h3>
-   <p class="summary">${escapeHTML(n.summary)}</p>
+
+   <h3 class="title">
+    ${escapeHTML(n.title)}
+   </h3>
+
+   <p class="summary">
+    ${escapeHTML(n.summary)}
+   </p>
+
    <a class="read"
     href="${safeURL(n.url)}"
     target="_blank"
     rel="noopener noreferrer">
     LEER NOTICIA ORIGINAL ↗
    </a>
+
   </div>
  </article>`;
 }
 
-async function load() {
+/* CARGA DE NOTICIAS */
+
+async function loadNews() {
+
+ const featured = document.getElementById("featured");
 
  try {
 
-  const response=await fetch(
+  const response = await fetch(
    "./data/news.json?v="+Date.now(),
    {cache:"no-store"}
   );
 
-  if(!response.ok) throw new Error("No se encuentra news.json");
+  if(!response.ok) {
+   throw new Error("No se encuentra news.json");
+  }
 
-  const data=await response.json();
+  const data = await response.json();
 
-  const now=Date.now();
-  const cutoff=now-24*60*60*1000;
+  const now = Date.now();
+  const cutoff = now-(24*60*60*1000);
 
-  // Filtro estricto de las últimas 24 horas.
+  /*
+   * FILTRO ESTRICTO:
+   * Solo noticias publicadas durante las
+   * últimas 24 horas.
+   */
 
-  const news=(data.articles || [])
+  const news = (data.articles || [])
    .filter(n=>{
-    const date=new Date(n.published_at).getTime();
+
+    const date = new Date(n.published_at).getTime();
 
     return Number.isFinite(date) &&
      date>=cutoff &&
      date<=now &&
-     n.url &&
-     relevant(n);
+     n.title &&
+     n.url;
    })
-   .map(n=>({...n,category:categoryOf(n)}));
+   .map(n=>({
+    ...n,
+    category:getCategory(n)
+   }));
 
-  // Ordenar por relevancia estimada.
+  /*
+   * ORDENACIÓN POR RELEVANCIA ESTIMADA
+   */
 
-  news.sort((a,b)=>importance(b)-importance(a));
+  news.sort((a,b)=>
+   importance(b)-importance(a)
+  );
 
   document.getElementById("updated").textContent =
    "Última actualización: "+
-   new Date(data.generated_at).toLocaleString(
-    "es-ES",
-    {dateStyle:"medium",timeStyle:"short",timeZone:"Europe/Madrid"}
-   )+" · Hora peninsular";
+   formatDate(data.generated_at_madrid || data.generated_at)+
+   " · Hora peninsular";
 
   document.getElementById("count").textContent =
-   news.length+" noticias deportivas verificadas";
+   news.length+" noticias verificadas";
 
-  if(!news.length) {
-   document.getElementById("featured").innerHTML=`
+  if(news.length===0) {
+
+   featured.innerHTML=`
     <div class="empty">
-     <h2>📰 Hoy no hay noticias verificadas</h2>
+     <h2>📰 No hay noticias verificadas</h2>
      <p>No mostramos noticias antiguas para rellenar la portada.</p>
     </div>`;
+
    return;
   }
 
-  // PORTADA: 15 noticias destacadas.
+  /*
+   * PORTADA: 15 NOTICIAS
+   */
 
-  const top=news.slice(0,15);
+  const top = news.slice(0,15);
 
-  document.getElementById("featured").innerHTML =
-   card(top[0],true);
+  featured.innerHTML = card(top[0],true);
 
   document.getElementById("top-news").innerHTML =
    top.slice(1).map(n=>card(n)).join("");
 
-  // CATEGORÍAS: conservar todas las noticias.
+  /*
+   * TODAS LAS NOTICIAS EN SUS CATEGORÍAS
+   */
 
-  const groups={};
+  const groups = {};
 
   news.forEach(n=>{
-   (groups[n.category] ||= []).push(n);
+   if(!groups[n.category]) {
+    groups[n.category] = [];
+   }
+   groups[n.category].push(n);
   });
 
-  const categories=Object.keys(groups).sort((a,b)=>{
-   return CATEGORY_ORDER.indexOf(a)-CATEGORY_ORDER.indexOf(b);
-  });
+  const categories = Object.keys(groups).sort((a,b)=>
+   ORDER.indexOf(a)-ORDER.indexOf(b)
+  );
+
+  /*
+   * MENÚ DE NAVEGACIÓN
+   */
 
   document.getElementById("nav").innerHTML =
    '<a href="#portada">PORTADA</a>'+
@@ -662,19 +716,24 @@ async function load() {
     `<a href="#${encodeURIComponent(c)}">${escapeHTML(c.toUpperCase())}</a>`
    ).join("");
 
+  /*
+   * CREAR CATEGORÍAS
+   */
+
   document.getElementById("categories").innerHTML =
    categories.map(c=>{
 
-    const items=groups[c];
-    const visible=items.slice(0,6);
-    const extra=items.slice(6);
+    const items = groups[c];
+
+    const visible = items.slice(0,6);
+    const extra = items.slice(6);
 
     return `
      <section class="category"
       id="${encodeURIComponent(c)}">
 
       <div class="section-title">
-       <h2>${EMOJI[c] || "🏅"} ${escapeHTML(c)}</h2>
+       <h2>${ICONS[c]} ${escapeHTML(c)}</h2>
        <span>${items.length} NOTICIAS</span>
       </div>
 
@@ -688,30 +747,30 @@ async function load() {
         <div class="grid">
          ${extra.map(n=>card(n)).join("")}
         </div>
-       </details>` : ""}
+       </details>
+      ` : ""}
 
      </section>`;
    }).join("");
 
  } catch(error) {
 
-  document.getElementById("featured").innerHTML=`
+  featured.innerHTML=`
    <div class="empty">
-    <h2>Estamos preparando la edición</h2>
-    <p>No se ha podido cargar el archivo de noticias.</p>
+    <h2>⚠️ No se ha podido cargar la edición</h2>
+    <p>Comprueba que existe data/news.json.</p>
    </div>`;
 
   document.getElementById("count").textContent =
-   "Edición pendiente";
+   "Error de carga";
 
   console.error(error);
  }
 }
 
-load();
+loadNews();
 
 </script>
 
 </body>
 </html>
-
