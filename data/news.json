@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T11:14:47.437295+00:00",
-  "generated_at_madrid": "2026-11-25T12:14:47.437295+01:00",
-  "window_start": "2026-11-24T11:14:47.437295+00:00",
-  "window_end": "2026-11-25T11:14:47.437295+00:00",
+  "generated_at": "2026-11-25T11:18:21.576553+00:00",
+  "generated_at_madrid": "2026-11-25T12:18:21.576553+01:00",
+  "window_start": "2026-11-24T11:18:21.576553+00:00",
+  "window_end": "2026-11-25T11:18:21.576553+00:00",
   "window_hours": 24,
   "source_count": 6,
-  "article_count": 186,
+  "article_count": 185,
   "errors": [
     {
       "source": "L'Équipe",
@@ -22,6 +22,17 @@
       "url": "https://www.bbc.co.uk/sport/football/articles/cmglrzg3zx9no?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb84/live/59c159f0-e8be-11f1-ac76-db9e97f93d67.jpg",
       "published_at": "2026-11-25T11:04:32+00:00",
+      "category": "Otros deportes"
+    },
+    {
+      "id": "87d36f531d369cb0",
+      "title": "Rinderknech denies refusing doping test and expects to be cleared",
+      "summary": "France's Arthur Rinderknech is confident he will be cleared of an alleged refusal to undergo a doping test.",
+      "source": "Sky Sports",
+      "country": "Reino Unido",
+      "url": "https://www.skysports.com/tennis/news/12040/13616314/arthur-rinderknech-denies-refusing-to-take-anti-doping-test-after-charge-confirmed-for-french-tennis-player",
+      "image": "https://e0.365dm.com/25/10/1920x1080/skysports-arthur-rinderknech_7048903.jpg?20261125095950",
+      "published_at": "2026-11-25T11:00:00+00:00",
       "category": "Otros deportes"
     },
     {
@@ -1499,17 +1510,6 @@
       "category": "Otros deportes"
     },
     {
-      "id": "a99d9f4677009cf6",
-      "title": "Norwich hit back to hold QPR",
-      "summary": "Norwich's impressive run of victories came to an end as QPR held them to a 1-1 draw at Carrow Road.",
-      "source": "Sky Sports",
-      "country": "Reino Unido",
-      "url": "https://www.skysports.com/football/norwich-city-vs-queens-park-rangers/report/560694",
-      "image": "https://e2.365dm.com/26/11/1920x1080/skysports-norwich-qpr_7415693.jpg?20261124214201",
-      "published_at": "2026-11-24T21:35:00+00:00",
-      "category": "Otros deportes"
-    },
-    {
       "id": "261d2f791f24fcef",
       "title": "Matarazzo, a preparar alternativas al 'Búfalo' para frenar a las 'Águilas'",
       "summary": "La Real Sociedad debe dejar atrás el mal trago que supuso la derrota en Santander pese a haber generado 31 disparos y centrarse en su objetivo más próximo, que es mejorar en la Europa League y optar al top 8, o a un buen puesto en la clasificación pensando en las eliminatorias. Visita este jueves al Crystal Palace de la Premier League y a estas horas…",
@@ -2046,17 +2046,6 @@
       "url": "https://www.marca.com/futbol/celta-fortuna/2026/11/24/nuevo-frenazo-bajcetic.html",
       "image": "https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/11/24/6b0573aad60a8.jpeg",
       "published_at": "2026-11-24T11:23:50+00:00",
-      "category": "Otros deportes"
-    },
-    {
-      "id": "2eba8d0f52e42629",
-      "title": "Continental eleva las prestaciones del sport-touring con el ContiRoadAttack 4",
-      "summary": "Cuando hablamos de neumáticos sport-touring , buscamos un equilibrio que no siempre resulta sencillo de conseguir. Queremos hacer kilómetros con comodidad y confianza , contar con un buen comportamiento cuando cambia el tiempo y, por supuesto, disfrutar de las curvas cuando aparece una carretera que invita a enlazarlas. El Continental ContiRoadAttack 4…",
-      "source": "Mundo Deportivo",
-      "country": "España",
-      "url": "https://www.mundodeportivo.com/solomoto/equipamiento/20261124/1004251983/continental-eleva-prestaciones-sport-touring-contiroadattack-4.html",
-      "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/18/6afdca6231363.r_d.1500-1000-0.jpeg",
-      "published_at": "2026-11-24T11:16:39+00:00",
       "category": "Otros deportes"
     }
   ]
