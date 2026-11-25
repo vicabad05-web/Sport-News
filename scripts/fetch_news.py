@@ -90,9 +90,13 @@ def main():
     now = datetime.now(timezone.utc)
     local_now = now.astimezone(MADRID)
     # En los disparadores dobles de GitHub Actions, solo se ejecuta el de las 08:00 de Madrid.
-    if local_now.hour != 8:
-        print(f"Saltando ejecución: hora de Madrid {local_now:%H:%M}, no son las 08:00.")
-        return
+    import os
+
+is_manual = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
+
+if local_now.hour != 8 and not is_manual:
+    print(f"Saltando ejecución: hora de Madrid {local_now:%H:%M}, no son las 08:00.")
+    return
 
     cutoff = now - timedelta(hours=24)
     sources = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
