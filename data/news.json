@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T11:05:54.792031+00:00",
-  "generated_at_madrid": "2026-11-25T12:05:54.792031+01:00",
-  "window_start": "2026-11-24T11:05:54.792031+00:00",
-  "window_end": "2026-11-25T11:05:54.792031+00:00",
+  "generated_at": "2026-11-25T11:14:47.437295+00:00",
+  "generated_at_madrid": "2026-11-25T12:14:47.437295+01:00",
+  "window_start": "2026-11-24T11:14:47.437295+00:00",
+  "window_end": "2026-11-25T11:14:47.437295+00:00",
   "window_hours": 24,
   "source_count": 6,
-  "article_count": 189,
+  "article_count": 186,
   "errors": [
     {
       "source": "L'Équipe",
@@ -143,6 +143,17 @@
       "url": "https://www.mundodeportivo.com/elotromundo/television/20261125/1004255297/rtve-confirma-grison-estrena-escondite-lunes-30-noviembre-dct.html",
       "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/uploads/2026/11/25/6b06b401e2cef.jpeg",
       "published_at": "2026-11-25T10:30:56+00:00",
+      "category": "Otros deportes"
+    },
+    {
+      "id": "fc4232ae194bdde4",
+      "title": "The Spin | South Africa fans are furious over tickets for New Year Test, but are they right to be?",
+      "summary": "Series against England promises packed stands but home fans have accused Cricket South Africa of prioritising wealthy tourists In the afterglow of South Africa’s nine-wicket victory against Bangladesh at the Wanderers last week, Kagiso Rabada admitted that the occasion had been unusually difficult. Strange, considering he had claimed eight wickets and…",
+      "source": "The Guardian Sport",
+      "country": "Reino Unido",
+      "url": "https://www.theguardian.com/sport/2026/nov/25/south-africa-england-test-series-tickets-kagiso-rabada-barmy-army-cricket-the-spin",
+      "image": "https://i.guim.co.uk/img/media/e5a6e10f12892f3d915d4b7339de36cac1bb8965/535_0_5353_4283/master/5353.jpg?width=140&quality=85&auto=format&fit=max&s=98fcb08e6dc51bd7455ab7e3655a8cbc",
+      "published_at": "2026-11-25T10:30:52+00:00",
       "category": "Otros deportes"
     },
     {
@@ -1653,17 +1664,6 @@
       "category": "Otros deportes"
     },
     {
-      "id": "ce73042f2837b95c",
-      "title": "Jannik Sinner’s Australian Open appearance in doubt after knee surgery",
-      "summary": "Wimbledon champion sidelined since winning title ‘We’ve tried everything to treat injury without surgery’ Jannik Sinner faces further time off the court after undergoing knee surgery. The former world No 1 has been sidelined with pain in his right knee since winning his second consecutive Wimbledon title in July. Details on Sinner’s condition have been…",
-      "source": "The Guardian Sport",
-      "country": "Reino Unido",
-      "url": "https://www.theguardian.com/sport/2026/nov/24/jannik-sinners-australian-open-in-great-doubt-after-he-has-to-have-knee-surgery",
-      "image": "https://i.guim.co.uk/img/media/005854b9a7440ab2c69116098328b86902c9349a/500_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=1152631c7cb058a4a4c812f2b4b65da9",
-      "published_at": "2026-11-24T18:36:11+00:00",
-      "category": "Tenis"
-    },
-    {
       "id": "14f6f4a7dad006df",
       "title": "Teen star Vaibhav Sooryavanshi blitzes through record books with 53-ball 204",
       "summary": "India A batter breaks sixes record with 28 against UAE Captain Tilak Varma: ‘I would say it’s absolute carnage’ The teenage sensation Vaibhav Sooryavanshi hammered 204 off 53 balls for India A on Tuesday to break a host of records, including for the fastest century and double-century in List A cricket. The 15-year-old Sooryavanshi struck a staggering 28…",
@@ -2057,39 +2057,6 @@
       "url": "https://www.mundodeportivo.com/solomoto/equipamiento/20261124/1004251983/continental-eleva-prestaciones-sport-touring-contiroadattack-4.html",
       "image": "https://imagenes2.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2026/11/18/6afdca6231363.r_d.1500-1000-0.jpeg",
       "published_at": "2026-11-24T11:16:39+00:00",
-      "category": "Otros deportes"
-    },
-    {
-      "id": "9c86b6b4e4ef14f1",
-      "title": "El otro lado del ciclismo: la enfermedad, la presión y el negocio de las estrellas<br>",
-      "summary": "El exciclista repasa con MARCA su nueva vida como agente de A&amp;J All Sports, la enfermedad que precipitó su retirada, los recuerdos de su carrera y el futuro de un ciclismo cada vez más competitivo dentro y fuera de la carretera",
-      "source": "Marca",
-      "country": "España",
-      "url": "https://www.marca.com/ciclismo/2026/11/24/benat-intxausti-jovenes-les-digo-tengan-paciencia-pasa-cuerpo-te-obliga-parar.html",
-      "image": "https://www.dailymotion.com/crawler/video/xbzfkv2",
-      "published_at": "2026-11-24T11:11:37+00:00",
-      "category": "Ciclismo"
-    },
-    {
-      "id": "419c84f2e808a600",
-      "title": "Raphinha quiere dar otro salto en la Champions League con el Barça",
-      "summary": "Suma 23 goles y está a dos de desbancar a Luis Suárez del segundo puesto del ránking&nbsp;",
-      "source": "Marca",
-      "country": "España",
-      "url": "https://www.marca.com/futbol/barcelona/2026/11/24/raphinha-quiere-dar-salto-champions-league-barca.html",
-      "image": "https://e01-xlk-ue-marca.uecdn.es/files/article_main_microformat/uploads/2026/11/23/6b0472dbd6200.jpeg",
-      "published_at": "2026-11-24T11:08:59+00:00",
-      "category": "Fútbol"
-    },
-    {
-      "id": "64b084f83cca3791",
-      "title": "Coventry & Worcester express Prem interest on own terms",
-      "summary": "Champ clubs Coventry and Warriors confirm interest in Prem places - but not if it puts their clubs at financial risk.",
-      "source": "BBC Sport",
-      "country": "Reino Unido",
-      "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cqzjr4gg3mdko?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fee0/live/4199de10-e7f6-11f1-99b6-a35a62fa4264.png",
-      "published_at": "2026-11-24T11:07:31+00:00",
       "category": "Otros deportes"
     }
   ]
