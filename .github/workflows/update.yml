@@ -1,3 +1,4 @@
+
 name: Actualizar SPORT NEWS
 
 on:
@@ -7,13 +8,22 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
+
+concurrency:
+  group: sport-news-publication
+  cancel-in-progress: false
 
 jobs:
-  update-news:
+
+  build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
@@ -34,13 +44,28 @@ jobs:
           git diff --cached --quiet || git commit -m "Actualizar SPORT NEWS"
           git push
 
-      - name: Configurar Pages
+      - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Subir web
+      - name: Preparar paquete web
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
-      - name: Publicar web
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Publicar SPORT NEWS
+        id: deployment
         uses: actions/deploy-pages@v4
+
